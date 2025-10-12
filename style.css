@@ -1,0 +1,8 @@
+.body{
+    font-family: 'Rightel';
+}
+@font-face {
+    font-family: 'Rightel';
+    src: url("./src/IRANSansWeb(FaNum).ttf");
+    src: url("./src/IRANSansWebFaNum.d402f064a654da21814c.woff");
+}
