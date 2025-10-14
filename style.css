@@ -1,9 +1,37 @@
 @import "tailwindcss";
-body{
+
+body {
     font-family: 'Rightel';
+    box-sizing: border-box;
 }
+
 @font-face {
     font-family: 'Rightel';
     src: url("./src/IRANSansWeb(FaNum).ttf");
     src: url("./src/IRANSansWebFaNum.d402f064a654da21814c.woff");
+}
+
+
+
+#A {
+
+    &:focus {
+        #aa2 {
+            display: block;
+
+
+        }
+
+        button {
+            border-bottom: 4px solid transparent;
+        }
+
+        button:focus {
+            border-bottom-color: #a72b77;
+        }
+
+
+    }
+
+
 }
