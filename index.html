@@ -1,140 +1,240 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./src/icon/icon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="./vite.config.ts" />
-  <link rel="stylesheet" href="/style.css" />
-  <title>Rightel</title>
-</head>
-<body>
-  <header class="w-full h-[68px] flex justify-around items-center mt-4 gap-10">
-    <div
-      class="w-44 h-11 border-1 text-[13px] text-gray-500 rounded-3xl border-amber-200 flex justify-center items-center gap-2">
-      <p class="flex justify-center items-center mb-1">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3ZM10.5 6C10.5 5.175 9.825 4.5 9 4.5C8.175 4.5 7.5 5.175 7.5 6C7.5 6.825 8.175 7.5 9 7.5C9.825 7.5 10.5 6.825 10.5 6ZM13.5 12.75C13.35 12.2175 11.025 11.25 9 11.25C6.975 11.25 4.65 12.2175 4.5 12.7575V13.5H13.5V12.75ZM3 12.75C3 10.755 6.9975 9.75 9 9.75C11.0025 9.75 15 10.755 15 12.75V15H3V12.75Z"
-            fill="#3F484A" />
-        </svg>
-      </p>
-      مشترک های سازمانی
-    </div>
-    <div class="flex justify-center items-center gap-4">
-      <input type="text" />
-      <p>|</p>
-      <p>EN</p>
-      <img src="./src/img/header.png" alt="" />
-      <p
-        class="w-32 h-9 border-2 border-[#a72b77] bg-[#a72b77] text-white rounded-2xl flex justify-center items-center">
-        ترابرد به رایتل
-      </p>
-    </div>
-  </header>
-  <nav
-    class="w-full h-[68px] flex justify-center items-center gap-[50px] pl-[180px] text-gray-600 border-b border-gray-300 text-[17px]  ">
-    <a href="">
-      <img class="h-11" src="./src/img/nav.png" alt="" />
-    </a>
-    <button class="w-[150px] h-[68px] flex justify-center items-center relative group   " id="A">
-      <div class="w-[150px] h-[68px] flex justify-center items-center  cursor-pointer hover:text-[#a72b77] ">
-        <img src="./src/img/down.png" alt="" class=" group-focus-within:hidden">
-        <img src="./src/img/up.png" alt="" class=" hidden group-focus-within:block">
-        <p>محصولات</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/icon/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./vite.config.ts" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Rightel</title>
+  </head>
+  <body>
+    <header
+      class="w-full h-[68px] flex justify-around items-center mt-4 gap-10"
+    >
+      <div
+        class="w-44 h-11 border-1 text-[13px] text-gray-500 rounded-3xl border-amber-200 flex justify-center items-center gap-2"
+      >
+        <p class="flex justify-center items-center mb-1">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3ZM10.5 6C10.5 5.175 9.825 4.5 9 4.5C8.175 4.5 7.5 5.175 7.5 6C7.5 6.825 8.175 7.5 9 7.5C9.825 7.5 10.5 6.825 10.5 6ZM13.5 12.75C13.35 12.2175 11.025 11.25 9 11.25C6.975 11.25 4.65 12.2175 4.5 12.7575V13.5H13.5V12.75ZM3 12.75C3 10.755 6.9975 9.75 9 9.75C11.0025 9.75 15 10.755 15 12.75V15H3V12.75Z"
+              fill="#3F484A"
+            />
+          </svg>
+        </p>
+        مشترک های سازمانی
       </div>
-      <div id="aa2" class="w-[2816px] h-[500px] absolute bg-amber-300 top-17 z-10 hidden">
-        <div class="flex justify-center">
-          <div class="w-[500px] h-auto  bg-blue-100 flex">
-            <div class="w-[50%] h-96 bg-emerald-900 flex  flex-col justify-center items-center gap-10">
-              <a href="#"
-                class="w-[170px] h-[45px]  bg-[#F1E2EC] flex rounded-3xl text-[#a72b77] justify-center items-center gap-6 text-[15px] ">سیم
-                کارت
-                <svg style="width: 30px;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <path d="M15 7L10 12L15 17" stroke="#a72b77" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </g>
-                </svg>
-              </a>
-              <a href="#">سرویس فیبرنوری</a>
-              <a href="#">سایر</a>
-            </div>
-            <div class="w-[50%] h-full  flex flex-col justify-center items-center gap-10">
-              <p class="flex w-full  gap-15 border-b  text-[#a72b77]">
-                <img src="./src/img/sim-card.png" alt="">
-                سیم کارت ها
-              </p>
-              <a href="#">دایمی</a>
-              <a href="#">اعتباری</a>
-              <a href="#">سیم کارت هدیه</a>
+      <div class="flex justify-center items-center gap-4">
+        <input type="text" />
+        <p>|</p>
+        <p>EN</p>
+        <img src="./src/img/header.png" alt="" />
+        <p
+          class="w-32 h-9 border-2 border-[#a72b77] bg-[#a72b77] text-white rounded-2xl flex justify-center items-center"
+        >
+          ترابرد به رایتل
+        </p>
+      </div>
+    </header>
+    <nav
+      class="w-full h-[68px] flex justify-center items-center gap-[50px] pl-[180px] text-gray-600 border-b border-gray-300 text-[17px]"
+    >
+      <a href="">
+        <img class="h-11" src="./src/img/nav.png" alt="" />
+      </a>
+      <button
+        class="w-[150px] h-[68px] flex justify-center items-center relative group"
+        id="A"
+      >
+        <div
+          class="w-[150px] h-[68px] flex justify-center items-center cursor-pointer hover:text-[#a72b77]"
+        >
+          <img
+            src="./src/img/down.png"
+            alt=""
+            class="group-focus-within:hidden"
+          />
+          <img
+            src="./src/img/up.png"
+            alt=""
+            class="hidden group-focus-within:block"
+          />
+          <p>محصولات</p>
+        </div>
+        <div
+          id="aa2"
+          class="w-[2816px] h-[500px] absolute bg-amber-300 top-17 z-10 hidden"
+        >
+          <div class="flex justify-center">
+            <div class="w-[500px] h-auto bg-blue-100 flex">
+              <div
+                class="w-[50%] h-96 bg-emerald-900 flex flex-col justify-center items-center gap-10"
+              >
+                <a
+                  href="#"
+                  class="w-[170px] h-[45px] bg-[#F1E2EC] flex rounded-3xl text-[#a72b77] justify-center items-center gap-6 text-[15px]"
+                  >سیم کارت
+                  <svg
+                    style="width: 30px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M15 7L10 12L15 17"
+                        stroke="#a72b77"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <a href="#">سرویس فیبرنوری</a>
+                <a href="#">سایر</a>
+              </div>
+              <div
+                class="w-[50%] h-full flex flex-col justify-center items-center gap-10"
+              >
+                <p class="flex w-full gap-15 border-b text-[#a72b77]">
+                  <img src="./src/img/sim-card.png" alt="" />
+                  سیم کارت ها
+                </p>
+                <a href="#">دایمی</a>
+                <a href="#">اعتباری</a>
+                <a href="#">سیم کارت هدیه</a>
+              </div>
             </div>
           </div>
         </div>
+      </button>
+      <a href="#" class="flex justify-center items-center">
+        <img src="./src/img/nav2.png" alt="" />
+        <p>خدمات و سرگرمی</p>
+      </a>
+      <a href="#" class="flex justify-center items-center">
+        <img src="./src/img/nav2.png" alt="" />
+        <p>طرح ها و پیشنهاد ها</p>
+      </a>
+      <a href="#" class="flex justify-center items-center">
+        <img src="./src/img/nav2.png" alt="" />
+        <p>ثبت نام و خرید</p>
+      </a>
+      <a href="#" class="flex justify-center items-center">
+        <img src="./src/img/nav2.png" alt="" />
+        <p>رایتل من</p>
+      </a>
+      <a href="#" class="flex justify-center items-center">
+        <img src="./src/img/nav2.png" alt="" />
+        <p>درباره رایتل</p>
+      </a>
+      <a href="#" class="flex justify-center items-center">
+        <img src="./src/img/nav2.png" alt="" />
+        <p>پشتیبانی</p>
+      </a>
+    </nav>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="bg-rose-400 w-full h-[514px]"></div>
+    <div class="mx-auto flex justify-center items-center gap-16 mt-10">
+      <div
+        class="flex flex-col justify-center items-center gap-5 text-gray-600"
+      >
+        <img class="grayscale" src="./src/section/one.png" alt="" />
+        <p class="text-gray-500">خرید سیم کارت</p>
       </div>
-    </button>
-    <a href="#" class="flex justify-center items-center">
-      <img src="./src/img/nav2.png" alt="" />
-      <p>خدمات و سرگرمی</p>
-    </a>
-    <a href="#" class="flex justify-center items-center">
-      <img src="./src/img/nav2.png" alt="" />
-      <p>طرح ها و پیشنهاد ها</p>
-    </a>
-    <a href="#" class="flex justify-center items-center">
-      <img src="./src/img/nav2.png" alt="" />
-      <p>ثبت نام و خرید</p>
-    </a>
-    <a href="#" class="flex justify-center items-center">
-      <img src="./src/img/nav2.png" alt="" />
-      <p>رایتل من</p>
-    </a>
-    <a href="#" class="flex justify-center items-center">
-      <img src="./src/img/nav2.png" alt="" />
-      <p>درباره رایتل</p>
-    </a>
-    <a href="#" class="flex justify-center items-center">
-      <img src="./src/img/nav2.png" alt="" />
-      <p>پشتیبانی</p>
-    </a>
-  </nav>
-  <br><br><br><br><br><br><br><br><br>
-  <div class="bg-rose-400 w-full h-[514px]"></div>
-  <div class="mx-auto flex justify-center items-center gap-16 mt-10">
-    <div class="flex flex-col justify-center items-center gap-5 text-gray-600">
-      <img class="grayscale" src="./src/section/one.png" alt="" />
-      <p class="text-gray-500">خرید سیم کارت</p>
+      <div class="h-[90px] border-l-1 border-gray-400"></div>
+      <div
+        class="flex flex-col justify-center items-center gap-5 text-gray-600"
+      >
+        <img class="grayscale" src="./src/section/two.png" alt="" />
+        <p class="text-gray-500">خرید بسته</p>
+      </div>
+      <div class="h-[90px] border-l-1 border-gray-400"></div>
+      <div
+        class="flex flex-col justify-center items-center gap-5 text-gray-600"
+      >
+        <img class="grayscale" src="./src/section/three.png" alt="" />
+        <p class="text-gray-500">افزایش اعتبار</p>
+      </div>
+      <div class="h-[90px] border-l-1 border-gray-400"></div>
+      <div
+        class="flex flex-col justify-center items-center gap-5 text-gray-600"
+      >
+        <img class="grayscale" src="./src/section/four.png" alt="" />
+        <p class="text-gray-500">پرداخت صورتحساب</p>
+      </div>
+      <div class="h-[90px] border-l-1 border-gray-400"></div>
+      <div
+        class="flex flex-col justify-center items-center gap-5 text-gray-600"
+      >
+        <img class="grayscale" src="./src/section/five.png" alt="" />
+        <p class="text-gray-500">دریافت نمایندگی</p>
+      </div>
+      <div class="h-[90px] border-l-1 border-gray-400"></div>
+      <div
+        class="flex flex-col justify-center items-center gap-5 text-gray-600"
+      >
+        <img class="grayscale" src="./src/section/six.png" alt="" />
+        <p class="text-gray-500">نواحی تحت پوشش</p>
+      </div>
     </div>
-    <div class="h-[90px] border-l-1 border-gray-400"></div>
-    <div class="flex flex-col justify-center items-center gap-5 text-gray-600">
-      <img class="grayscale" src="./src/section/two.png" alt="" />
-      <p class="text-gray-500">خرید بسته</p>
+    <div class="w-full h-[888px] bg-rose-600"></div>
+    <div
+      class="w-full h-[427px] flex flex-col justify-center items-center gap-20"
+    >
+      <div class="flex justify-center items-center">
+        <p class="font-bold text-2xl">پر بازدیدترین ها</p>
+      </div>
+      <div class="flex justify-center items-center gap-24">
+        <div class="flex flex-col justify-center items-center gap-5">
+          <img
+            class="w-[95px] h-[95px] grayscale"
+            src="./src/section/seven.png"
+            alt=""
+          />
+          <p class="text-gray-600 font-bold">کد دستوری</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5">
+          <img class="grayscale" src="./src/section/eight.png" alt="" />
+          <p class="text-gray-600 font-bold">فیلیمو</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5">
+          <img
+            class="w-[95px] h-[95px] grayscale"
+            src="./src/section/nine.png"
+            alt=""
+          />
+          <p class="text-gray-600 font-bold">استعلام وضعیت سیم کارت</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5">
+          <img class="grayscale" src="./src/section/ten.png" alt="" />
+          <p class="text-gray-600 font-bold">بسته دست دوز</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5">
+          <img class="grayscale" src="./src/section/eleven.png" alt="" />
+          <p class="text-gray-600 font-bold">سیم کارت x100</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5">
+          <img class="grayscale" src="./src/section/twelve.png" alt="" />
+          <p class="text-gray-600 font-bold">معرفی به دوستان</p>
+        </div>
+      </div>
     </div>
-    <div class="h-[90px] border-l-1 border-gray-400"></div>
-    <div class="flex flex-col justify-center items-center gap-5 text-gray-600">
-      <img class="grayscale" src="./src/section/three.png" alt="" />
-      <p class="text-gray-500">افزایش اعتبار</p>
-    </div>
-    <div class="h-[90px] border-l-1 border-gray-400"></div>
-    <div class="flex flex-col justify-center items-center gap-5 text-gray-600">
-      <img class="grayscale" src="./src/section/four.png" alt="" />
-      <p class="text-gray-500">پرداخت صورتحساب</p>
-    </div>
-    <div class="h-[90px] border-l-1 border-gray-400"></div>
-    <div class="flex flex-col justify-center items-center gap-5 text-gray-600">
-      <img class="grayscale" src="./src/section/five.png" alt="" />
-      <p class="text-gray-500">دریافت نمایندگی</p>
-    </div>
-    <div class="h-[90px] border-l-1 border-gray-400"></div>
-    <div class="flex flex-col justify-center items-center gap-5 text-gray-600">
-      <img class="grayscale" src="./src/section/six.png" alt="" />
-      <p class="text-gray-500">نواحی تحت پوشش</p>
-    </div>
-  </div>
-  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-</body>
+  </body>
 </html>
