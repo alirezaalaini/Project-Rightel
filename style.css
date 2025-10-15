@@ -21,16 +21,6 @@ body {
 
 
         }
-
-        button {
-            border-bottom: 4px solid transparent;
-        }
-
-        button:focus {
-            border-bottom-color: #a72b77;
-        }
-
-
     }
 
 
