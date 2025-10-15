@@ -1,0 +1,17 @@
+.swiper-two {
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 75%;
+  .swiper-slide-two {
+    flex-direction: column;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 20px;
+    height: 500px;
+    width: 390px;
+    border: 1px solid black;
+  }
+}
