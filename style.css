@@ -38,3 +38,7 @@ body {
    
   
 }
+.animate{
+     animation-duration:0.7s !important;
+
+}
