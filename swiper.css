@@ -15,3 +15,43 @@
     border: 1px solid black;
   }
 }
+
+.swiper-one {
+      width: 75%;
+      height: 550px;
+      margin: 10px 0 10px 0;
+      
+
+      .swiper-slide {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    .swiper-button-next ,.swiper-button-prev{
+      color: #a72b77;
+      padding: 13px;
+      border: 1px solid;
+      background-color: #EAD3E2;
+      border-radius: 50%;
+      &:hover{
+        color: white;
+         background-color:#a72b77;
+      }
+      
+    
+
+    }
+    
+      
+      
+      
+      
+      
+
+    }
+   
+
+    
+
+    

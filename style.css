@@ -25,3 +25,16 @@ body {
 
 
 }
+.animate__slideInRight {
+  animation-duration: 2.5s !important;
+  
+  
+   
+  
+}
+.animate__slideInLeft {
+  animation-duration: 2.5s !important;
+   
+   
+  
+}
