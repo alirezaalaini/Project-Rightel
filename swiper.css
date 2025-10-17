@@ -5,15 +5,38 @@
   justify-content: center;
   margin: auto;
   width: 75%;
+  height: 680px;
+  
+  
   .swiper-slide-two {
     flex-direction: column;
     margin-top: 10px;
     display: flex;
     border-radius: 20px;
     height: 500px;
-    width: 390px;
-    border: 1px solid black;
+    width: 300px;
+    box-shadow: 0px 0px 1px 1px rgb(221, 221, 221);
+    &:hover{
+      box-shadow: 0px 0px 15px 1px rgb(126, 126, 126);
+       transition: all 0.7s;
+    }
+    
   }
+
+   .swiper-button-next ,.swiper-button-prev{
+      color: #a72b77;
+      padding: 13px;
+      border: 1px solid;
+      background-color: #fff3fb;
+      border-radius: 50%;
+      &:hover{
+        color: white;
+         background-color:#a72b77;
+      }
+      
+    
+
+    }
 }
 
 .swiper-one {
